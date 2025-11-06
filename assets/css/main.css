@@ -951,7 +951,7 @@ ol {
   bottom: 0;
   height: 4px;
   width: 80px;
-  background: #var(--primary-color);
+  background: var(--primary-color);
   border-radius: 5px;
   margin-left: -40px;
 }
@@ -992,7 +992,7 @@ ol {
 }
 
 .breadcrumbs .breadcrumb-nav li a:hover {
-  color: #var(--primary-color);
+  color: var(--primary-color);
 }
 
 .breadcrumbs .breadcrumb-nav li a:after {
@@ -2811,9 +2811,9 @@ ol {
   margin-left: 5px;
 }
 
-.courses .single-course .bottom-content .tag {
-  /* float: right; */
-}
+/* .courses .single-course .bottom-content .tag {
+  float: right;
+} */
 
 .courses .single-course .bottom-content .tag i {
   color: var(--primary-color);
@@ -2835,13 +2835,13 @@ ol {
 /*======================================
     Course Details CSS
 ========================================*/
-.course-details {
-  /* Course Overview */
-  /* Course Curriculum */
-  /* Course Instructor */
-  /* Course Reviews */
-  /* Course Sidebar */
-}
+/* .course-details {
+  Course Overview
+  Course Curriculum
+  Course Instructor
+  Course Reviews
+  Course Sidebar
+} */
 
 .course-details .bottom-content {
   overflow: hidden;
@@ -3514,10 +3514,10 @@ ol {
 }
 
 /* Event Details */
-.event-details {
+/* .event-details { */
   /* Event Content */
   /* Event Sidebar */
-}
+/* } */
 
 .event-details .details-content .title {
   font-size: 34px;
