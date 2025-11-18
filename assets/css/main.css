@@ -109,6 +109,44 @@ a {
   color: var(--body-text);
 } */
 
+/* custom focus btn start */
+
+.customFocusBtn {
+  position: relative !important;
+}
+
+.customFocusBtn span{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px;
+  width: 100%;
+  animation: ripple 1s infinite;
+  z-index: 88;
+  visibility: visible !important;
+}
+
+
+/* @keyframes */
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1),
+                0 0 0 4px rgba(0, 0, 0, 0.1),
+                0 0 0 8px rgba(0, 0, 0, 0.1),
+                0 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1),
+                0 0 0 8px rgba(255, 255, 255, 0.1),
+                0 0 0 13px rgba(255, 255, 255, 0.1),
+                0 0 0 18px rgba(255, 255, 255, 0);
+  }
+}
+
+/* custom focus btn end */
+
 audio,
 canvas,
 iframe,
@@ -2843,11 +2881,40 @@ ol {
   Course Sidebar
 } */
 
+.cd_price_top h6 del{
+  opacity: 0.5;
+}
+
+.cd_price_top_day p{
+  border-radius: 20px;
+  background-color: rgb(from #fd6a6a r g b / 0.1);
+  padding: 5px 10px;
+  color: #fd6a6a;
+}
+
+.cd_price_card .button .btn{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cd_price_card .button .btn.alt-btn{
+  background-color: transparent;
+  color: #081828;
+}
+
+.cd_price_card .button .btn.alt-btn:hover{
+  color: #fff;
+}
+
 .course-details .bottom-content {
   overflow: hidden;
   padding: 20px 30px 20px 20px;
   border: 1px solid #eee;
   margin-top: 30px;
+}
+
+.course_features div p:first-child span{
+  color: #000;
 }
 
 .course-details .bottom-content .button {
