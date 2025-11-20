@@ -3100,7 +3100,7 @@ ol {
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding: 10px 10px 10px 0;
-  max-width: 235px;
+  /* max-width: 235px; */
   color: #081828;
   font-size: 13px;
   font-weight: 500;
@@ -4545,7 +4545,26 @@ ol {
   position: relative;
 }
 
+.single-team {
+  border: 1px solid #eee;
+  background-color: #fff;
+  margin-top: 30px;
+  position: relative;
+}
+
 .teachers .single-team::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  height: 0;
+  width: 5px;
+  background-color: var(--primary-color);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.single-team::before {
   position: absolute;
   content: "";
   right: 0;
@@ -4561,7 +4580,16 @@ ol {
   height: 100%;
 }
 
+.single-team:hover::before {
+  height: 100%;
+}
+
 .teachers .single-team .image {
+  overflow: hidden;
+  padding: 10px 0 10px 10px;
+}
+
+.single-team .image {
   overflow: hidden;
   padding: 10px 0 10px 10px;
 }
@@ -4571,11 +4599,28 @@ ol {
   border: 1px solid #eee;
 }
 
+.single-team .image img {
+  width: 100%;
+  border: 1px solid #eee;
+}
+
 .teachers .single-team .info-head {
   padding: 35px 40px 35px 20px;
 }
 
+.single-team .info-head {
+  padding: 35px 40px 35px 20px;
+}
+
 .teachers .single-team .info-head .info-box .designation {
+  font-weight: 600;
+  font-size: 13px;
+  display: block;
+  color: var(--primary-color);
+  margin-bottom: 3px;
+}
+
+.single-team .info-head .info-box .designation {
   font-weight: 600;
   font-size: 13px;
   display: block;
@@ -4588,13 +4633,28 @@ ol {
   margin-bottom: 15px;
 }
 
+.single-team .info-head .info-box .name {
+  display: block;
+  margin-bottom: 15px;
+}
+
 .teachers .single-team .info-head .info-box .name a {
   font-weight: 700;
   font-size: 19px;
   color: #081828;
 }
 
+.single-team .info-head .info-box .name a {
+  font-weight: 700;
+  font-size: 19px;
+  color: #081828;
+}
+
 .teachers .single-team .info-head .info-box .name a:hover {
+  color: var(--primary-color);
+}
+
+.single-team .info-head .info-box .name a:hover {
   color: var(--primary-color);
 }
 
@@ -4608,13 +4668,28 @@ ol {
   margin-top: 5px;
 }
 
+.single-team .info-head .social {
+  display: block;
+  margin-top: 5px;
+}
+
 .teachers .single-team .info-head .social li {
   display: inline-block;
   margin-right: 5px;
   margin-top: 10px;
 }
 
+.single-team .info-head .social li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
 .teachers .single-team .info-head .social li:last-child {
+  margin: 0;
+}
+
+.single-team .info-head .social li:last-child {
   margin: 0;
 }
 
@@ -4629,7 +4704,26 @@ ol {
   text-align: center;
 }
 
+.single-team .info-head .social li a {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border: 1px solid #eee;
+  color: #081828;
+  border-radius: 50%;
+  font-size: 13px;
+  text-align: center;
+}
+
 .teachers .single-team .info-head .social li a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: transparent;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.single-team .info-head .social li a:hover {
   background-color: var(--primary-color);
   color: #fff;
   border-color: transparent;
